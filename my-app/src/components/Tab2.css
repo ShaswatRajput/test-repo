@@ -1,0 +1,35 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.music-card{
+    margin-top: 200px;
+    height: 300px;
+    width: 500px;
+    background-color: red;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.song-title{
+    margin-top: 20px;
+    height: 70px;
+    background-color: aqua;
+    width: 70%;
+
+}
+.artist{
+    margin-top: 20px;
+    height: 70px;
+    background-color: aquamarine;
+    width: 70%;
+    
+}
+.btn-container{
+    flex-direction: row;
+}
