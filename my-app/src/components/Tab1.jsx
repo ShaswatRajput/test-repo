@@ -8,14 +8,18 @@ const Tab1 = () => {
         const str1 = firstNumber.toString();
       const str2 = secondNumber.toString();
       const commonDigits = [];
-      for (let i = 0; i < str1.length; i++) {
+      const compareFunction = (str1,str2)=>{
+        for (let i = 0; i < str1.length; i++) {
         const digit = str1[i];
         if (str2.includes(digit) && !commonDigits.includes(digit)) {
       commonDigits.push(digit);
     }
+          
+      }
+         return commonDigits;
   }
 
-  return commonDigits;
+ 
 
     }
     const finalArr = compareFunction(firstArra,secondArray)
