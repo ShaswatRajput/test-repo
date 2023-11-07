@@ -5,24 +5,20 @@ const Tab1 = () => {
     const [secondNumber,setSecondNumber] = useState(0)
     const [compared,setCompared] = useState([])
     const handleClick = ()=>{
-        const firstString = `${firstNumber}`
-        const firstArray = firstString.split("")
-        const secondString = `${secondNumber}`
-        const secondArray = secondString.split("")
-        const newArr = []
-       const compareFunction = (firstArray,secondArray)=>{ 
-        for(let i =0;i<6;i++){
-            for(let j =0;j<6;j++){
-                if(firstArray[i]===secondArray[j]){
-                    newArr.push(firstArray[i])
-                }
-            }
-        }
-        const set = new Set(newArr)
-        return set
+        const str1 = firstNumber.toString();
+      const str2 = secondNumber.toString();
+      const commonDigits = [];
+      for (let i = 0; i < str1.length; i++) {
+        const digit = str1[i];
+        if (str2.includes(digit) && !commonDigits.includes(digit)) {
+      commonDigits.push(digit);
+    }
+  }
+
+  return commonDigits;
 
     }
-    const finalArr = compareFunction(firstArray,secondArray)
+    const finalArr = compareFunction(firstArra,secondArray)
     setCompared(finalArr)
 
     }
