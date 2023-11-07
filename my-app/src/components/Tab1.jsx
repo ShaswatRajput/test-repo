@@ -22,7 +22,7 @@ const Tab1 = () => {
  
 
     }
-    const finalArr = compareFunction(firstArra,secondArray)
+    const finalArr = compareFunction(str1,str2)
     setCompared(finalArr)
 
     }
