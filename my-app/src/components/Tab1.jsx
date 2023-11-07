@@ -7,8 +7,9 @@ const Tab1 = () => {
     const handleClick = ()=>{
         const str1 = firstNumber.toString();
       const str2 = secondNumber.toString();
-      const commonDigits = [];
+     
       const compareFunction = (str1,str2)=>{
+        const commonDigits = [];
         for (let i = 0; i < str1.length; i++) {
         const digit = str1[i];
         if (str2.includes(digit) && !commonDigits.includes(digit)) {
